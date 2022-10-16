@@ -5,8 +5,8 @@ title: Experiences
 # Research Experience
 ## Research Assistant
 *NJIT's Intelligible Information Visualization Lab (NiiV)* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*May 2022 - Present*
-- Collaborated with research group to implement a visual analytic workflow for explainable ranking models
-- Designed explanatory informative visualizations using Observable and D3.js based on weekly feedback
+- Collaborate with research group to analyze visual analytic workflows for understanding scientific communications
+- Design explanatory informative visualization, specifically for explainable ranking models used in cases such as university admissions, based on visualization principles using Observable and D3.js
 - Aided in virtual interviews with experts in ranking models to showcase usability of the workflow
 
 ## Project Lead 
@@ -25,9 +25,10 @@ title: Experiences
 # Work Experience
 ## Project Manager, OneNine AI 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; *Jan 2021 - May 2021*
-- Designed and implemented an React + Django web application to provide data analytics and AI insights for individuals with no tech experience 
-- Added support and standardization for searching multiple public data sources
-- Organized daily and weekly meetings between collaborators to ensure timely progression
+- Designed and implemented an visualization dashboard web application to provide data analytics and AI insights for individuals with no tech experience using React + Django 
+- Added support and standardization for searching multiple public data sources such as World Bank Open Data
+- Organized consistent meetings between collaborators to ensure timely progression
+
 
 ## Teaching Assistant, NJIT, Newark
 *Intro to Computer Networks Course*	 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; *Jan 2020 - May 2021*
