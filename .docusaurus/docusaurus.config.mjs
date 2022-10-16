@@ -8,10 +8,12 @@ export default {
   "tagline": "Researching How We Communicate Online",
   "url": "https://vkoli.github.io",
   "baseUrl": "/",
+  "trailingSlash": false,
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "organizationName": "vkoli",
-  "projectName": "docusaurus",
+  "projectName": "vkoli.github.io",
+  "deploymentBranch": "gh-pages",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -25,7 +27,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/captain/Documents/website/site/sidebars.js",
+          "sidebarPath": "/home/captain/Documents/website/vkoli.github.io/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "blog": {
@@ -33,7 +35,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/captain/Documents/website/site/src/css/custom.css"
+          "customCss": "/home/captain/Documents/website/vkoli.github.io/src/css/custom.css"
         }
       }
     ]
