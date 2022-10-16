@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/extracurriculars",
+  "source": "@site/src/pages/extracurriculars.md",
+  "title": "Extracurricular Acivities",
+  "description": "Volunteer - NJ Governor's STEM Scholars (NJGSS) May 2021 - Present",
+  "frontMatter": {
+    "title": "Extracurricular Acivities"
+  }
+}

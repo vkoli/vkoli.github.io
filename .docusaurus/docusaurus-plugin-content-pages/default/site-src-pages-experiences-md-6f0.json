@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/experiences",
+  "source": "@site/src/pages/experiences.md",
+  "title": "Experiences",
+  "description": "Research Assistant",
+  "frontMatter": {
+    "title": "Experiences"
+  }
+}
