@@ -31,7 +31,7 @@ export default function Home() {
         <div className='pic'>
              <img src={DocusaurusImageUrl} alt="Photo" />
         </div>
-        <p className="bio">I'm a 2nd-year PhD student in the Department of Computer Science at New Jersey Institute of Technology (NJIT). 
+        <p className="bio">I'm a PhD student in the Department of Computer Science at New Jersey Institute of Technology (NJIT). 
           I have a background in software developement and data analysis. I graduated summa cum laude with B.S. in Computer Science and a minor in Data Analytics from NJIT.
           <br />
           My research interests broadly relate to how we communicate online—how we affect and are affected by systems of online communication.
