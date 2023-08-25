@@ -5,6 +5,7 @@ title: Experiences
 # Research Experience
 ## Research Assistant
 *NJIT's Intelligible Information Visualization Lab (NiiV)* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*May 2022 - Present*
+- Advised by Dr. Aritra Dasgupta
 - Collaborate with research group to analyze visual analytic workflows for understanding scientific communications
 - Design explanatory informative visualization, specifically for explainable ranking models used in cases such as university admissions, based on visualization principles using Observable and D3.js
 - Aided in virtual interviews with experts in ranking models to showcase usability of the workflow
