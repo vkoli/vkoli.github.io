@@ -62,7 +62,13 @@ const config = {
         title: 'Home',
         items: [
           {to: '/experiences', label: 'Experiences', position: 'left'},
+          {to: '/research', label: 'Research & Publications', position: 'left'},
           {to: '/extracurriculars', label: 'Extracurriculars', position: 'left'},
+          {
+            label: 'Google Scholar',
+            href: 'https://scholar.google.com/citations?user=XAv86csAAAAJ&hl=en',
+            position: 'right'
+          },
           {
             label: 'Github',
             href: 'https://github.com/vkoli',
