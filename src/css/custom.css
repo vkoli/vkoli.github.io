@@ -40,35 +40,195 @@
   align-items:center;
 }
 
+/* Desktop: profile photo and bio side by side, photo mosaic full width below.
+   Phones: profile photo, then bio, then the mosaic. */
 .main {
-  padding: auto;
-  margin: auto;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 440px) minmax(0, 520px);
+  grid-template-areas:
+    "pic bio"
+    "collage collage";
+  align-items: start;
   justify-content: center;
-
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
 }
 
-.bio{
-  width: 300px;
-  padding: auto;
-  margin-right: 500px;
-  flex: auto;
+.pic {
+  grid-area: pic;
+}
+
+.main img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Photo mosaic: tiles of different sizes on a 4-column grid */
+.collage {
+  grid-area: collage;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  gap: 0.75rem;
+}
+
+.collage__item {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.collage__item--big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.collage__item--tall {
+  grid-row: span 2;
+}
+
+.collage__item--wide {
+  grid-column: span 2;
+}
+
+.main .collage__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.collage__item figcaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 2rem 0.75rem 0.6rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.collage__item:hover figcaption,
+.collage__item:focus-within figcaption {
+  opacity: 1;
+}
+
+.collage__item:hover img,
+.collage__item:focus-within img {
+  transform: scale(1.04);
+}
+
+.bio {
+  grid-area: bio;
+  margin: 0;
   text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-img {
-  height: 500px;
+.bio p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    grid-template-columns: minmax(0, 440px);
+    grid-template-areas:
+      "pic"
+      "bio"
+      "collage";
+    row-gap: 1.5rem;
+  }
+
+  .collage {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    gap: 0.5rem;
+  }
+
+  .collage__item--big {
+    grid-row: span 1;
+  }
+}
+
+.publication {
+  margin-bottom: 2rem;
+}
+
+.publication img {
+  display: block;
+  max-width: 100%;
+  max-height: 280px;
   width: auto;
-  margin-left: 350px;
+  border-radius: 8px;
 }
 
-.pic{
-  /* width: 150px;
-  height: 200px; */
-  padding: auto;
-  margin: auto;
-  flex:auto;
-  text-align: left;
+/* Label that marks each entry as a paper, poster, talk, etc. */
+.pub-type {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.pub-type--paper {
+  background-color: #2e8555;
+}
+
+.pub-type--poster {
+  background-color: #7c4dbd;
+}
+
+.pub-type--talk {
+  background-color: #c0571f;
+}
+
+.pub-type--attended {
+  background-color: #5a6270;
+}
+
+.publication__title {
+  margin-bottom: 0.25rem;
+}
+
+.publication__authors {
+  margin-bottom: 0.25rem;
+}
+
+.publication__venue {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+/* Right-aligned dates on the Experiences page; stack below on narrow screens */
+p:has(> .date) {
+  display: flow-root;
+}
+
+.date {
+  float: right;
+  margin-left: 1rem;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .date {
+    float: none;
+    display: block;
+    margin-left: 0;
+  }
 }
